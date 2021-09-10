@@ -317,6 +317,7 @@ export default function Home() {
             padding-top: 50px;
             flex-direction: column;
             align-items: flex-start;
+            max-width: 300px;
           }
 
           .navBarItem {
