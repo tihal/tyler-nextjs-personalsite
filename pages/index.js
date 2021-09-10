@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import classNames from 'classnames'
 
+// hacky loader function to allow site to load statically
+const myLoader = ({src}) => {
+  return src;
+}
 
 export default function Home() {
   return (
@@ -54,6 +58,7 @@ export default function Home() {
               width={540}
               height={390}
               alt="A glimpse of my life"
+              loader={myLoader}
             />
           </div>
             
